@@ -2,6 +2,8 @@
 
 这是一个纯前端静态网页贺卡，直接由 `index.html`、`style.css`、`script.js` 和 `assets/images/` 组成。
 
+线上地址：https://5039chatgpt-dotcom.github.io/graduation-card/
+
 ## 本地电脑预览
 
 - 方式一：直接双击 `index.html`，用浏览器打开。
