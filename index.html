@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>毕业快乐 | 致张润铭师兄</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section id="coverScreen" class="cover-screen" aria-label="毕业贺卡封面">
+    <div id="coverPhoto" class="cover-photo" aria-hidden="true"></div>
+    <div class="cover-shade" aria-hidden="true"></div>
+
+    <div class="cover-content">
+      <p class="cover-kicker">西安交通大学创新港 · 2026</p>
+      <h1 id="coverTitle"></h1>
+      <p id="coverSubtitle" class="cover-subtitle"></p>
+      <p id="coverText" class="cover-text"></p>
+      <button id="openCardBtn" class="primary-btn" type="button">
+        <span>打开贺卡</span>
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="cardApp" class="card-app" hidden>
+    <div class="album-shell">
+      <header class="album-topbar">
+        <div>
+          <p class="album-kicker">毕业纪念册</p>
+          <h2>致张润铭师兄</h2>
+        </div>
+        <span id="pageCounter" class="page-counter">1 / 10</span>
+      </header>
+
+      <article id="albumPage" class="album-page" aria-live="polite">
+        <section class="photo-panel" aria-label="本页照片">
+          <div id="imageFrame" class="image-frame">
+            <img id="cardImage" src="" alt="" decoding="async">
+            <div id="imagePlaceholder" class="image-placeholder">照片暂未加载</div>
+          </div>
+        </section>
+
+        <section class="letter-panel">
+          <p id="cardLabel" class="card-label"></p>
+          <h3 id="cardTitle"></h3>
+          <p id="cardSubtitle" class="card-subtitle"></p>
+          <div id="cardText" class="card-text"></div>
+          <p id="cardAuthor" class="card-author"></p>
+        </section>
+      </article>
+
+      <nav class="controls" aria-label="翻页控制">
+        <button id="prevBtn" class="nav-btn" type="button">
+          <span aria-hidden="true">‹</span>
+          <span>上一页</span>
+        </button>
+
+        <div id="dots" class="dots" aria-label="页码进度"></div>
+
+        <button id="nextBtn" class="nav-btn" type="button">
+          <span>下一页</span>
+          <span aria-hidden="true">›</span>
+        </button>
+
+        <button id="replayBtn" class="nav-btn replay-btn" type="button" hidden>
+          <span>重新翻看</span>
+        </button>
+      </nav>
+    </div>
+
+    <footer class="site-footer">西安交通大学创新港 · 2026</footer>
+  </main>
+
+  <noscript>
+    <p class="noscript-tip">请开启浏览器 JavaScript 后查看这张毕业电子贺卡。</p>
+  </noscript>
+</body>
+</html>
